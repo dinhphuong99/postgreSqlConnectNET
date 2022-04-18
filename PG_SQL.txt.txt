@@ -1,0 +1,30 @@
+Cách kết nối Db:
+console PSQL có thể nhấn ENTER liên tục để skip
+nhập pass :
+
+mở bằng pgAdmin và nhập mật khẩu.
+
+https://www.postgresqltutorial.com
+
+localhost
+
+Kết nối với VS 2019 .NET Core:
+- Tìm kiếm và cài đặt: ODBC  Driver for Postgresql
+- Administrative Tools
+- Đúp chuột vào ODBC Data Source (64-bit)
+- User DSN -> Add
+
+Kết nối với VS 2019 .NET Framework:
+- thêm thư viện Npgsql, EntityFramework6.npg
+- thêm file và chỉnh sửa file đó trông thư mục model.
+- Mở weconfig và thêm:
+    <connectionStrings>
+		<add name="Myconnection" connectionString="Server = localhost; Port = 5432; Database = charan; User Id = postgres; Password = 123456;" providerName="Npgsql"/>
+	</connectionStrings>
+sau <configSections>
+
+- Thêm một file MVC 5 with views, using Entity Framework
+  Model class: EmpClass(MVC_EF_CRUD_Postgresql.Models)
+  Data context class: ApplicationDbContext(MVC_EF_CRUD_Postgresql.DataContext)
+
+
