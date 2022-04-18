@@ -1,0 +1,11 @@
+Thêm /Emp vào sau đường dẫn.
+
+System.ArgumentException
+  HResult=0x80070057
+  Message=The ADO.NET provider with invariant name 'Npgsql' is either not registered in the machine or application config file, or could not be loaded. See the inner exception for details.
+  Source=<Cannot evaluate the exception source>
+  StackTrace:
+<Cannot evaluate the exception stack trace>
+
+Inner Exception 1:
+ArgumentException: Unable to find the requested .Net Framework Data Provider.  It may not be installed.
